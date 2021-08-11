@@ -1,0 +1,709 @@
+/*
+Theme Name: DynBog
+Theme URI: http://www.pensedynamo.com/
+Description:  Theme, modificado de Fluid Solution, para blog da Dynamo
+Author: Kaushal Sheth, modificações por Anderson Solano
+Author URI: http://www.pensedynamo.com/
+
+*/
+
+
+/*#############################################################
+Name: Fluid Solution
+Date: 2006-09-06
+Description: Totally liquid three-column layout, clean and simple.
+Author: Viktor Persson
+URL: http://arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+@import "nav.css";
+
+/* standard elements */
+body {
+	behavior:url("../wresource/csshover3.htc");
+	background: #FFF url('img/bg.gifff') repeat-x;
+	color: #333;
+	font: normal 80% Arial /* "Trebuchet MS",Verdana,sans-serif; */
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+
+a img
+{
+border:none;
+}
+
+
+p,code,ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font-size: 1.4em;
+}
+code {
+	background: url('img/bgcode.gif');
+	border: 1px solid #F0F0F0;
+	border-left: 6px solid #F06;	
+	color: #990000;
+	display: block;
+	font: normal 1.1em "Lucida Sans Unicode",serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+
+/*input {	background: #ccc;border: none;height: 25px;font: bold 12px Arial, Helvetica, sans-serif;color: #fff;vertical-align: middle; cursor:pointer; border:1px solid #000;}*/
+
+blockquote {
+	background: #FBFCF5;
+	border-bottom: 1px solid #EED;
+	border-top: 1px solid #EED;
+	color: #444;
+	display: block;
+	font: normal 0.9em Verdana,sans-serif;
+	margin-bottom: 12px;
+	padding: 12px;
+}
+
+h1,h2,h3,h4 {
+	font: normal 1.4em "Trebuchet MS",sans-serif;
+	color: #990000;
+}
+
+/* misc */
+.clearer {
+	clear: both;
+}
+
+div#wrapper {
+  position: relative;
+  left: 50%;
+  width: 852px;
+  margin: 0 0 0 -426px;
+}
+
+/* header */
+.header {
+  position: relative;
+  height: 118px;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #8d8d8d;
+
+/*  esse aqui e o originnal: 
+
+       "background: url('img/top-banner-dynblog.giff') no-repeat;" 
+	border-bottom: 1px solid #EEE;
+	height: 1;
+	margin-bottom: 4px;
+ */
+
+
+/* Aqui o atual: */
+}
+
+
+.logo {
+	position: absolute;
+  left: 34px;
+  top: 52px;
+  width: 111px;
+  height: 41px;
+  overflow: hidden;
+  background: transparent url(img/logo.gif) no-repeat 0 0;
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999em;
+color: #F5F5F5;
+text-decoration:none;
+}
+
+.logo a:visited
+{
+color: #F5F5F5;
+text-decoration:none;
+}
+
+.header h2 {
+	/*border-top: 1px solid #EEE;*/
+  position: absolute;
+  	color: #900000;
+	text-align: right;
+}
+.header h2 span {
+
+	color: #F5F5F5;
+	padding: 0 6px;
+}
+
+.fone {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  font-size: 12px;
+  color: #900;
+}
+
+div.banner {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+div.banner img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* left side (main content) */
+.left {
+  float: left;
+  width: 610px;
+	margin: 0 0 20px 5px;
+  overflow: hidden;
+}
+
+
+.content .descr {
+	color: #222;
+	font-size: 1.2em;
+        font: bold;
+	margin-bottom: 6px;
+        background: #F9F9F9;
+
+
+
+}
+
+.descr a,.descr a:visited {
+        color: #cc3300;
+
+        background: #FBFCF5;
+        
+}
+
+.related_post li {
+	list-style: url('img/li.gif');
+	margin-left: 18px;
+}
+.content h1 {
+	font-size: 2.4em;
+	margin-bottom: 4px;
+}
+.content h2 a {
+	font-size: 28px;
+	margin-bottom: 4px;
+}
+.content a,.footer a {
+	color: #FF9900;
+	text-decoration: none;
+}
+.content a:hover,.footer a:hover {
+	color: #990000;
+}
+
+/* nav & subnavigation */
+.right {
+  float: right;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	position: relative;
+	
+}	
+
+/* navigation */
+/*.nav {
+	right: 23%;
+	text-align: center;
+	width: 17%;
+}*/
+/*.nav .logo {
+	background: url('img/logo.gif') no-repeat center;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+	height: 128px;
+
+}*/
+/*
+.nav h3 {
+	color: #990000;
+	margin: 12px 0;
+}
+.nav li {
+	border-bottom: 1px solid #EEE;
+        font: normal 102.5% "Trebuchet MS",serif;
+        
+}
+.nav li a {
+	color: #333;
+/* original: display: block; * /	
+        display: block;
+	font: normal 1.1em "Trebuchet MS",serif;
+	padding: 4px 0;
+}
+.nav li a:hover {
+	background: #FAFAFA;
+	color: #FF9900;
+}*/
+
+/* subnav */
+.right {
+	background: #Eaeaea;
+	width: 200px;
+	/*width: 18%;*/
+  overflow: hidden;
+}
+.subnav {
+	padding: 12px 12px 0;
+}
+.subnav h3 {
+	color: #FF9900;
+	font-size: 1.4em;
+	height: 20px;
+	margin-left: 8px;
+}
+.subnav ul {
+	margin: 0 0 16px;
+	padding: 0;
+}
+.subnav li { 
+	list-style: none;
+	margin: 0;
+	border-bottom: 1px solid #FFF;
+}
+ .subnav h1 a
+ {
+ color: #990000;
+ }
+ 
+.subnav li a {	
+	color: #777;
+	display: block;
+	font-size: 0.9em;
+	padding: 3px 6px 3px 8px;
+	text-decoration: none;
+}
+.subnav li a:hover {
+	color: #990000;
+}
+
+/* round edges */
+.roundtl,.roundtr,.roundbl,.roundbr {
+	background: url('img/round.gif');
+	height: 16px;
+	width: 14px;
+}
+.roundtl,.roundbl {
+	float: left;
+}
+.roundtr,.roundbr {
+	float: right;
+}
+.roundtr {
+	background-position: right top;
+}
+.roundbr {
+	background-position: right bottom;
+}
+.roundbl {
+	background-position: left bottom;
+}
+
+/* footer */
+.footer {
+  clear: both;
+	color: #999;
+	border-top: 1px solid #EEE;
+	font: normal 1em Verdana,sans-serif;
+	margin: 0 3%;
+	padding: 8px 6px;
+}
+
+
+/* original: descr */
+
+.blog_details	{
+	background:#fdfdfd;
+	width:602px; 
+	color:#666; 
+	font-family:"trebuchet MS";
+	font-size:12px; 
+	padding:10px; 
+	margin:5px 0 20px 0; 
+	float: left; 
+	clear:both; 
+  height: 40px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.blog_details	span.data {
+display: block; margin:auto 5px;
+}
+
+.blog_details	span.user {
+	display: block;
+	margin:0 5px; 
+	/*padding-left:20px;*/
+  }
+
+
+.blog_details	img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+
+/* ============================== Comentários ======================== */
+
+
+.graybox, .graybox1, .graybox2  {
+	width: 500px;
+	font-family: Trebuchet MS;
+	padding: 0px 10px 10px 15px;
+	margin: 0px 0px 0px 0px;
+}
+
+.graybox p, graybox1 p, .graybox2 p{
+	color: #333333;
+	font-size: 14px;
+}
+
+.graybox ul li a, .graybox1 ul li a, .graybox2 ul li a{
+	list-style: none;
+}
+
+.graybox_fundo1 {
+        background: url(http://www.pensedynamo.com/blog/wp-content/uploads/2009/01/fundo-10.jpg) no-repeat;
+        height: 30px;
+        margin-bottom: 0;
+        padding-bottom:0;
+}
+.graybox_fundo2 {
+        background: url(http://www.pensedynamo.com/blog/wp-content/uploads/2009/01/fundo-11.jpg) repeat-y;
+	color: #333333;
+        margin-top:0;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-right: 20px;        
+}
+
+.graybox_fundo3 {
+        background: url(http://www.pensedynamo.com/blog/wp-content/uploads/2009/01/fundo-12.jpg) no-repeat;
+        height: 39px;
+        margin: 0;
+        padding-left: 20px;
+        padding-top: 10px;
+}
+
+.DeixeComentario {
+       font-size: 20px;
+       color: #900000;
+       font-family: Trebuchet MS;
+        border-bottom: 1px dotted #CCCCCC;
+	padding: 10px 0 5px 0;
+	clear: both;       
+
+}
+
+.commentlist2 {
+	padding: 10px;
+}
+
+.comment_1 {
+	padding: 10px;
+}
+.comment_alt {
+	background-color: #EEF3F9;
+}
+
+
+.comment {
+	margin: 20px 0;
+}
+
+			.comment_headline {
+				border-bottom-width: 1px;
+				border-bottom-style: dotted;
+				border-bottom-color: #999999;
+			}
+			
+			.comment_header {
+				margin: 0 0 0 70px;
+			}
+			
+			.comment_date {
+				font-size: 80%;
+				color: #999999;
+			}
+			
+			.comment_author {
+				font-size: large;
+				line-height: 22px;
+                                padding-bottom: 10px;
+                                color: #666;
+			}
+
+			.comment_author a {
+				text-decoration: underline;
+			}
+			
+			.comment_body {
+				font-size: 95%;
+				line-height: 15px;
+				padding: 0 0 0 70px;
+			}
+
+.graybox-teste {
+				font-size: 95%;
+				line-height: 15px;
+				padding: 0 0 0 70px;
+			}
+
+
+
+			
+			.comment_actions {
+				font-size: 85%;
+				padding: 0 0 5px 0;
+				margin: 0 0 20px 70px;
+				border-bottom-width: 1px;
+				border-top-style: none;
+				border-right-style: none;
+				border-bottom-style: dotted;
+				border-left-style: none;
+				border-bottom-color: #CCCCCC;
+			}
+			
+			.comment_form {
+				margin: 0 8px;
+			}
+			
+			
+						#gravatar {
+							background-image: url(icons/icon_comment.gif);
+							background-repeat: no-repeat;
+							background-position: left top;
+							width: 60px;
+							height: 60px;
+							margin: 0;
+							padding: 0;
+							float: left;
+						}
+
+
+
+#author { margin-left:90px; }
+#url { margin-left:80px; }
+
+/*
+div.nav ul {
+
+  position: absolute;
+  right: 53px;
+  top: 64px;
+  list-style: none;
+  font-size: 11px;
+}
+
+div.nav ul li {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+div.nav ul li a {
+  display: block;
+  width: 65px;
+  padding: 0 15px 0 0;
+  height: 100%;
+  background: #f0f0f0 url(img/bullet_menu.gif) no-repeat 70px 8px;
+  color: #333;
+}
+div.nav ul li:hover a,
+div.nav ul li a:hover {
+  color: #900;
+  background: #f0f0f0 url(img/bullet_menu.gif) no-repeat 70px 8px;
+}
+div.nav ul li a.home {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+div.nav ul li ul li:hover a.home,
+div.nav ul li ul li a:hover,
+div.nav ul li a.home:hover {
+  color: #900;
+  background: #f0f0f0;
+}
+
+div.nav ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 130px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  font-size: 11px;
+}
+
+div.nav ul li:hover ul {
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+div.nav ul li ul li {
+  float: none;
+  text-align: left;
+}
+
+div.nav ul li:hover ul li a {
+  width: 120px;
+  text-align: left;
+  padding: 0 0 0 10px;
+  color: #333;
+  background: #fff;
+}
+
+div.nav ul li:hover ul li a:hover {
+  color: #900;
+  background: #f0f0f0;
+}*/
+
+
+
+.footer {
+  margin: 10px 0;
+  padding: 15px 0;
+  font-size: 10px;
+  text-align: center;
+  border-top: 1px solid #8d8d8d;
+  color: #666;
+}
+
+.footer p {
+  font-size: 9px;
+}
+.footer a {
+  text-decoration: none;
+  color: #900;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #900;
+}
+
+
+
+.clear {
+  clear: both;
+}
+
+
+.conteudo-sidebar
+{
+	float: right;
+	width: 225px;
+	padding: 0 8px 0 8px;
+	margin: 0 0 0 13px;
+	background: white;
+	z-index: 5;
+	border-left: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+}
+
+
+
+post {
+	clear: both;
+	margin: 1em 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#main .entry_post .hdr {
+	background: url(images/mtop.gif) top left no-repeat;
+	padding: 10px 16px 0 16px;
+}
+
+#main .entry_post .postbg {
+	background: url(images/mmid.gif) repeat-y;
+	margin: 0;
+	padding: 0;
+}
+
+#main .entry_post .postbody {
+	background: url(images/mbot0.gif) left bottom no-repeat;
+	padding: 10px 16px 10px 16px;
+	color:#555;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;	
+}
+
+#main .entry_post .postimage {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#main .entry_post h1, #main .entry_post h2, #main .entry_post h3 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #67bbe5;
+	margin: 0;
+}
+
+#main .entry_post h1 a, #main .entry_post h2 a, #main .entry_post h3 a{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #67bbe5;
+	margin: 0;
+}
+
+#main .entry_post .excerpt {
+	margin-top: 0;
+}
+
+#main .entry_post .ftr {
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	background: url(images/mftr.gif) left top repeat-x;
+}
+
+#main .entry_post .ftr .postedby {
+	padding: 0;
+	float: left;
+	margin: 8px 40px 0 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+}
+
+#main .entry_post .ftr .commentslink {
+	padding: 0;
+	float: right;
+	margin: 8px 0 0 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+}

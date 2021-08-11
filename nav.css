@@ -1,0 +1,130 @@
+div.nav {
+	top:40px;
+	vertical-align:bottom;
+	_float:right;
+	z-index:20;
+}
+div.nav ul {
+	float:right;
+	/*z-index:40;
+	_float:none;*/
+	
+	right: 0;
+	/*top: 34px;*/
+	list-style: none;
+	/*color:#666666;*/
+	font-weight:bold;
+	font-size:14px;
+	text-align: center;
+	
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color:#999;
+	/*
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#999;*/
+}
+
+div.nav ul li {
+	position: relative;
+	float: left;
+	width:85px;
+	height: 72px;
+	/*line-height: 20px;*/
+	text-align: center;
+	vertical-align:bottom;
+	/*
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color:#999;*/
+	
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#999;
+}
+
+div.nav ul li a {
+	display: block;
+	/*display: block;
+	padding: 0 15px 0 0;
+	
+	text-align:center;
+	width: 70px;
+	
+	background: url(img/bullet_menu.gif) no-repeat 70px 8px;*/
+	bottom:0;
+	color:#666666;
+}
+div.nav ul li:hover,
+div.nav ul li:hover a {
+	background: #4865A9;
+	color:#FFFFFF;
+}
+div.nav ul li ul li:hover a {
+	background: transparent;
+}
+div.nav ul li a.home {
+	text-align: center;
+	/*width: 100%;
+	padding: 0;*/
+}
+
+div.nav ul li a.home {
+	color: #990000;
+}
+div.nav ul li ul li:hover a.home,
+div.nav ul li ul li a:hover,
+div.nav ul li a.home:hover {
+	color: #990000;
+}
+
+div.nav ul li.home2:hover a {
+	color:#FFFFFF;
+}
+div.nav ul li ul li {margin-left:-2px;}
+div.nav ul li ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 72px;
+	width: 130px;
+	/**/
+	height:25px;
+	border: 1px solid #cccccc;
+	font-size: 11px;
+	background-color:#4865A9;
+}
+
+div.nav ul li:hover ul {
+	display: block;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+div.nav ul li:hover ul li a {
+  width: 120px;
+  text-align: left;
+  padding: 0 0 0 10px;
+	color: #FFF;
+}
+div.nav ul li ul li {
+	height:30px;
+	width:150px;;
+	background-color:#4865A9;
+	border-top:solid 1px #FFF;
+	line-height:30px;
+	float: none;
+	text-align: left;
+}
+/*div.nav ul li ul li a {
+	line-height:30px;
+}*/
+div.nav ul li ul li:hover {
+	background: #A6A6FF;
+}
+/*
+div.nav ul li:hover ul li a:hover {
+  color: #FFF;
+}*/
